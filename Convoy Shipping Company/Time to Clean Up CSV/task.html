@@ -1,0 +1,38 @@
+<h2>Description</h2>
+
+<p>As usual, no one consulted the expert (you) on how to fill the table. Another employee mixed things up and just copy-pasted entries from various documents with different formats. Luckily, no data is missing! You definitely need to clear the data from the prefixes and suffixes so that you can calculate them later. Also, you are not sure that this is the final Excel version. So, your program must include previous functionality.</p>
+
+<h2>Objectives</h2>
+
+<ol>
+	<li>Prompt the user to give a name for the input file (complete with the <em>.xlsx</em> or <em>.csv </em>extension). For the prompt message, use <code class="java">Input file name</code> followed by a newline.</li>
+	<li>If your file is <em>.xlsx</em>, convert it to <em>.csv</em>.</li>
+	<li>If your file is <em>.csv</em> correct the data right in the file.</li>
+	<li>Every cell of the output file, except headers, should contain only one integer number.</li>
+	<li>Count the number of the cells corrected by your script.</li>
+	<li>Write the corrected data to a CSV file, add the <code class="java">[CHECKED]</code> suffix to your file. For example: %<em>file_name%[CHECKED].csv</em>. </li>
+	<li>Your program should output the following message for the converted CSV file: <code class="java">X cells were corrected</code> or <code class="java">1 cell was corrected</code>, where <code class="java">X</code> is the number of corrected cells. Include the output file name.<br>
+	For example: <code class="java">4 cells were corrected in <em>%file_name%[CHECKED]</em>.csv</code>.</li>
+	<li>Display all the previous outputs for the conversions you have made earlier. </li>
+</ol>
+
+<p>If you have corrupted test files, please <a target="_blank" href="https://stepik.org/media/attachments/lesson/461165/stage2_files.zip" rel="noopener noreferrer nofollow">download them</a> and unzip in your working directory.</p>
+
+<h2>Examples</h2>
+
+<p>As a sample CSV test file, use your file from the first stage. Make sure that you have the cells for correction. You can also import the table provided in the first stage as an example (which covered the test cases). </p>
+
+<p>The greater-than symbol followed by a space (<code class="java">&gt; </code>) represents the user input. Note that it's not part of the input.</p>
+
+<p><strong>Example 1</strong></p>
+
+<pre><code class="language-no-highlight">Input file name
+&gt; data_one_xlsx.xlsx
+1 line was added to data_one_xlsx.csv
+4 cells were corrected in data_one_xlsx[CHECKED].csv</code></pre>
+
+<p><strong>Example 2</strong></p>
+
+<pre><code class="language-no-highlight">Input file name
+&gt; data_big_csv.csv
+12 cells were corrected in data_big_csv[CHECKED].csv</code></pre>
